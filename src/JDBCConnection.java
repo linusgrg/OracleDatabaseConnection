@@ -5,7 +5,7 @@ public class JDBCConnection {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println("change as been made");
+			
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:oracle", "c##anand", "sunil");
 			Statement st =conn.createStatement();
